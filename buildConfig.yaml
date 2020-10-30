@@ -8,7 +8,7 @@ spec:
   source:
     type: Git
     git:
-      ref: master
+      ref: main
       uri: https://github.com/sriram1103/ocp_build.git
   strategy:
     type: Docker
