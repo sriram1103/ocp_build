@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: appdeploy
-        image: image-registry.openshift-image-registry.svc:5000/openshift/python-app:latest
+        image: image-registry.openshift-image-registry.svc:5000/sriram/python-app:latest
         imagePullPolicy: Never
         ports:
         - containerPort: 5000
