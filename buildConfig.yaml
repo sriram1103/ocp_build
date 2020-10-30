@@ -19,5 +19,16 @@ spec:
       name: python-app:latest
   triggers:
   - type: ConfigChange
+  - type: "GitHub"
+    github:
+      secretReference:
+        name: "mysecret"    
   - imageChange:
       type: ImageChange
+---      
+kind: Secret
+apiVersion: v1
+metadata:
+  name: mysecret
+data:
+  WebHookSecretKey: 
